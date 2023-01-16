@@ -32,7 +32,7 @@ def content(msg: Message) -> [None, str]:
         return None
 
 
-@Client.on_message(filters.command("bug"))
+@Client.on_message(filters.command("lapor"))
 @capture_err
 async def bug(_, msg: Message):
     if msg.chat.username:
@@ -74,7 +74,7 @@ async def bug(_, msg: Message):
     elif user_id != owner:
         if bugs:
             await msg.reply_text(
-                f"<b>Bug Report : {bugs}</b>\n\n"
+                f"<b>ʟᴀᴘᴏʀᴀɴ ᴋᴇsᴀʟᴀʜᴀɴ : {bugs}</b>\n\n"
                 "✅ <b>ʟᴀᴘᴏʀᴀɴ ᴛᴇʟᴀʜ ʙᴇʀʜᴀsɪʟ ᴅɪ ʟᴀᴘᴏʀᴋᴀɴ ᴋᴇ ᴘᴇᴍɪʟɪᴋ ʙᴏᴛ ɪɴɪ</b>",
                 reply_markup=InlineKeyboardMarkup(
                     [
