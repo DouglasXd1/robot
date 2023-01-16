@@ -100,7 +100,7 @@ async def inline_help_func(__HELP__):
             title="Inline Commands",
             description="Help Related To Inline Usage.",
             input_message_content=InputTextMessageContent(
-                "**__Click A Button To Get Started.__**"
+                "**__ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ ɪɴɪ.__**"
             ),
             thumb_url="https://telegra.ph/file/1b8f08dba704a5eb2bb09.jpg",
             reply_markup=buttons,
@@ -115,21 +115,21 @@ async def alive_function(answers):
     bot_state = "Dead" if not await app.get_me() else "Alive"
     ubot_state = "Dead" if not await ubot2.get_me() else "Alive"
     buttons.add(
-        InlineKeyboardButton("Main bot", url="https://t.me/EmiexRobot"),
+        InlineKeyboardButton("ᴅᴏᴜɢʟᴀs ʀᴏʙᴏᴛ", url="https://t.me/douglasmusic_bot"),
         InlineKeyboardButton(
             "Go Inline!", switch_inline_query_current_chat=""
         ),
     )
 
     msg = f"""
-**[Emiko Robot ❤️](https://t.me/emikosupport):**
-**MainBot:** `{bot_state}`
-**UserBot:** `{ubot_state}`
-**Python:** `{pyver.split()[0]}`
-**Pyrogram:** `{pyrover}`
-**MongoDB:** `{mongover}`
-**Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/excrybaby)
+**[ᴅᴏᴜɢʟᴀs ʀᴏʙᴏᴛ](https://t.me/liveshowbanget):**
+**ᴍᴀɪɴ ʙᴏᴛ:** `{bot_state}`
+**sᴛᴀᴛɪsᴛɪᴋ:** `{ubot_state}`
+**ᴘʏᴛʜᴏɴ:** `{pyver.split()[0]}`
+**ᴘʏʀᴏᴍᴏᴅ:** `{pyrover}`
+**ᴍᴏɴɢᴏ ᴏᴠᴇʀ:** `{mongover}`
+**ᴘʟᴀᴛғʀᴏᴍ:** `{sys.platform}`
+**ᴘʀᴏғɪʟᴇ:** [ʙᴏᴛ](t.me/{BOT_USERNAME}) | [ᴋɪɴɢ](t.me/hisoka69)
 """
     answers.append(
         InlineQueryResultArticle(
