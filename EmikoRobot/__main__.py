@@ -85,19 +85,18 @@ PM_START_TEXT = """
 *ʜᴀɪɪ {} !*
  ᴀᴋᴜ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ᴍᴜsɪᴄ & ᴍᴀɴᴀɢᴇʀ [☕](https://telegra.ph/file/a9f2c0b24ea825378b683.jpg)
 ────────────────────────
-× *Uptime:* `{}`
-× `{}` *users, across* `{}` *chats.*
+× *ᴋᴇᴄᴇᴘᴀᴛᴀɴ:* `{}`
+× `{}` *ᴘᴇɴɢɢᴜɴᴀ, ᴅᴀɴ* `{}` *ɢʀᴏᴜᴘ.*
 ────────────────────────
  ɢᴜɴᴀᴋᴀɴ /help ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ᴍᴏᴅᴜʟᴇ sᴀʏᴀ.
- ᴅᴇᴠᴇʟᴏᴘᴇʀ sᴀʏᴀ ~ [ʜɪsᴏᴋᴀ](t.me/hisoka69)
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text=f"ᴛᴇɴᴛᴀɴɢ {dispatcher.bot.first_name} 🤖", callback_data="emiko_"),
+        InlineKeyboardButton(text=f"ᴛᴇɴᴛᴀɴɢ {dispatcher.bot.first_name}", callback_data="emiko_"),
     ],
     [
-        InlineKeyboardButton(text="ᴅᴀᴘᴀᴛᴋᴀɴ ʙᴀɴᴛᴜᴀɴ☎️", callback_data="help_back"),
+        InlineKeyboardButton(text="ʙᴀɴᴛᴜᴀɴ ☎️", callback_data="help_back"),
         InlineKeyboardButton(
             text="ᴍᴇɴᴄᴏʙᴀ ɪɴʟɪɴᴇ​​", switch_inline_query_current_chat=""
         ),
