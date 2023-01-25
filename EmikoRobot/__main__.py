@@ -82,8 +82,8 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*ʜᴀɪɪ {} !*
- ᴀᴋᴜ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ᴍᴜsɪᴄ & ᴍᴀɴᴀɢᴇʀ [☕](https://telegra.ph/file/a9f2c0b24ea825378b683.jpg)
+*ʜᴀɪ {} !*
+ᴀᴋᴜ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ᴍᴜsɪᴄ & ᴍᴀɴᴀɢᴇʀ [☕](https://telegra.ph/file/a9f2c0b24ea825378b683.jpg)
 ────────────────────────
 × *ᴋᴇᴄᴇᴘᴀᴛᴀɴ:* `{}`
 × `{}` *ᴘᴇɴɢɢᴜɴᴀ, ᴅᴀɴ* `{}` *ɢʀᴏᴜᴘ.*
@@ -113,7 +113,7 @@ Click on the button bellow to get description about specifics command."""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @Hisoka69 \
+ You can support the project by contacting @rzrgnshn \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -429,7 +429,7 @@ def emiko_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url="t.me/Liveshowbanget"),
-                    InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/Store69Real"),
+                    InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/TeknoProject"),
                  ],
                  [
                     InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="emiko_"),
@@ -448,7 +448,7 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ʜɪsᴏᴋᴀ", url="https://t.me/Hisoka69"),
+                    InlineKeyboardButton(text="Razor", url="https://t.me/rzrgnshn"),
                  ],
                  [
                     InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="emiko_"),
