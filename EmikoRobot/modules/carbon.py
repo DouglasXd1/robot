@@ -32,7 +32,7 @@ async def repo(_, message):
         photo=MEMEK,
         caption=f""" **Hey I'm Douglas Robot** 
 
-**Owner repo : [Hisoka](https://t.me/hisoka69)**
+**Owner repo : [razor](https://t.me/rzrgnshn)**
 **Python Version :** `{y()}`
 **Library Version :** `{o}`
 **Telethon Version :** `{s}`
@@ -44,9 +44,9 @@ async def repo(_, message):
             [
                 [
                     InlineKeyboardButton(
-                        "Repo", url="https://www.xnxx.com"), 
+                        "Repo", url="https://t.me/TeknoProject"), 
                     InlineKeyboardButton(
-                        "Support", url="https://t.me/Liveshowbanget")
+                        "Support", url="https://t.me/enamsembilanbanget")
                 ]
             ]
         )
