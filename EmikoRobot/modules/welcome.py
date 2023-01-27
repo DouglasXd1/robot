@@ -211,7 +211,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome Devs
             if new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "Selamat Datang Pangerang Hisoka",
+                    "Selamat Datang Pangerang @rzrgnshn 👑",
                     reply_to_message_id=reply,
                 )
                 continue
