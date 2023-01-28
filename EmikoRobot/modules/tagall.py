@@ -60,7 +60,7 @@ async def mentionall(event):
         if not chat_id in spam_chats:
             break
         usrnum += 1
-        usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}), "
+        usrtxt += f"📍 [{usr.first_name}](tg://user?id={usr.id}), "
         if usrnum == 5:
             if mode == "text_on_cmd":
                 txt = f"{msg}\n{usrtxt}"
@@ -106,14 +106,14 @@ async def cancel_spam(event):
             spam_chats.remove(event.chat_id)
         except:
             pass
-        return await event.respond("__Stopped Mention.__")
+        return await event.respond("__Berhenti Tag All.__")
 
 
 __mod_name__ = "Tag all"
 __help__ = """
 ──「 Mention all func 」──
 
-Emiko Can Be a Mention Bot for your group.
+Douglas Can Be a Mention Bot for your group.
 
 Only admins can tag all.  here is a list of commands
 
