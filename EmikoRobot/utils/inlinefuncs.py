@@ -129,7 +129,7 @@ async def alive_function(answers):
 **ᴘʏʀᴏᴍᴏᴅ:** `{pyrover}`
 **ᴍᴏɴɢᴏ ᴏᴠᴇʀ:** `{mongover}`
 **ᴘʟᴀᴛғʀᴏᴍ:** `{sys.platform}`
-**ᴘʀᴏғɪʟᴇ:** [ʙᴏᴛ](t.me/{BOT_USERNAME}) | [ᴋɪɴɢ](t.me/hisoka69)
+**ᴘʀᴏғɪʟᴇ:** [ʙᴏᴛ](t.me/{BOT_USERNAME}) | [ᴋɪɴɢ](t.me/Rzrgnshn)
 """
     answers.append(
         InlineQueryResultArticle(
