@@ -260,13 +260,12 @@ def info(update: Update, context: CallbackContext):
     )
 
     if user.last_name:
-        text += f"\nɴᴀᴍᴀ ʙᴇʟᴀᴋᴀɴɢ
- {html.escape(user.last_name)}"
+        text += f"\nɴᴀᴍᴀ ʙᴇʟᴀᴋᴀɴɢ : {html.escape(user.last_name)}"
 
     if user.username:
-        text += f"\nUsername: @{html.escape(user.username)}"
+        text += f"\nᴜsᴇʀɴᴀᴍᴇ : @{html.escape(user.username)}"
 
-    text += f"\nLink Pengguna: {mention_html(user.id, 'link')}"
+    text += f"\nʟɪɴᴋ ᴘᴇɴɢɢᴜɴᴀ : {mention_html(user.id, 'link')}"
 
     if chat.type != "private" and user_id != bot.id:
         _stext = "\nPresence: <code>{}</code>"
@@ -277,12 +276,12 @@ def info(update: Update, context: CallbackContext):
         else:
             status = status = bot.get_chat_member(chat.id, user.id).status
             if status:
-                if status in {"left", "kicked"}:
+                if status in {"keluar", "tertendang"}:
                     text += _stext.format("Not here")
                 elif status == "member":
-                    text += _stext.format("Detected")
-                elif status in {"administrator", "creator"}:
-                    text += _stext.format("Admin")
+                    text += _stext.format("terdeteksi")
+                elif status in {"admin", "pembuat"}:
+                    text += _stext.format("admin")
     if user_id not in [bot.id, 777000, 1087968824]:
         userhp = hpmanager(user)
         text += f"\n\n<b>:</b> Kesehatan<code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]"
