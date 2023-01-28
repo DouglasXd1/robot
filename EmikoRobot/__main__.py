@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *ʜᴀɪ {} !*
-ᴀᴋᴜ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ᴍᴜsɪᴄ & ᴍᴀɴᴀɢᴇʀ [☕](https://telegra.ph/file/a9f2c0b24ea825378b683.jpg)
+ᴀᴋᴜ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ᴍᴜsɪᴄ & ᴍᴀɴᴀɢᴇʀ [🍭](https://telegra.ph/file/a9f2c0b24ea825378b683.jpg)
 ────────────────────────
 × *ᴋᴇᴄᴇᴘᴀᴛᴀɴ:* `{}`
 × `{}` *ᴘᴇɴɢɢᴜɴᴀ, ᴅᴀɴ* `{}` *ɢʀᴏᴜᴘ.*
@@ -96,7 +96,7 @@ buttons = [
         InlineKeyboardButton(text=f"ᴛᴇɴᴛᴀɴɢ {dispatcher.bot.first_name}", callback_data="emiko_"),
     ],
     [
-        InlineKeyboardButton(text="ʙᴀɴᴛᴜᴀɴ ☎️", callback_data="help_back"),
+        InlineKeyboardButton(text="💬 ʙᴀɴᴛᴜᴀɴ", callback_data="help_back"),
         InlineKeyboardButton(
             text="ᴍᴇɴᴄᴏʙᴀ ɪɴʟɪɴᴇ​​", switch_inline_query_current_chat=""
         ),
@@ -109,7 +109,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-Click on the button bellow to get description about specifics command."""
+sɪʟᴀʜᴋᴀɴ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ ɪɴɪ ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ sᴇᴍᴜᴀ ᴍᴏᴅᴜʟᴇ ʙᴏᴛ."""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
@@ -230,7 +230,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"Hi, I'm {dispatcher.bot.first_name}. Nice to meet You.",
+            f"ʜɪ 👋, ᴀᴋᴜ {dispatcher.bot.first_name}. sᴇɴᴀɴɢ ʙᴇʀᴛᴇᴍᴜ ᴅᴇɴɢᴀɴ ᴍᴜ.",
             parse_mode=ParseMode.HTML
        )
 
@@ -380,10 +380,7 @@ def emiko_about_callback(update, context):
                  ],
                  [
                     InlineKeyboardButton(text="ɢʀᴏᴜᴘ", callback_data="emiko_support"),
-                    InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", callback_data="emiko_credit"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="ʀᴇᴘᴏ ʙᴏᴛ", url="https://www.xnxx.com"),
+                    InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", callback_data="emiko_credit").
                  ],
                  [
                     InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="source_back"),
