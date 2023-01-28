@@ -15,7 +15,7 @@ spam_chats = []
 async def mentionall(event):
     chat_id = event.chat_id
     if event.is_private:
-        return await event.respond("__This command can be use in groups and channels!__")
+        return await event.respond("__ᴘᴇʀɪɴᴛᴀʜ ɪɴɪ ᴅᴀᴘᴀᴛ ᴅɪɢᴜɴᴀᴋᴀɴ ᴅᴀʟᴀᴍ ɢʀᴜᴘ ᴅᴀɴ sᴀʟᴜʀᴀɴ 🍭__")
 
     is_admin = False
     try:
@@ -37,10 +37,10 @@ async def mentionall(event):
         ):
             is_admin = True
     if not is_admin:
-        return await event.reply("__Only admins can mention all!__")
+        return await event.reply("__ʜᴀɴʏᴀ ᴀᴅᴍɪɴ ʏᴀɴɢ ʙɪsᴀ ᴍᴇɴʏᴇʙᴜᴛᴋᴀɴ sᴇᴍᴜᴀɴʏᴀ🍭__")
 
     if event.pattern_match.group(1) and event.is_reply:
-        return await event.reply("__Give me one argument!__")
+        return await event.reply("__ʙᴇʀɪᴋᴀɴ sᴀʏᴀ sᴇʙᴜᴀʜ ᴋᴀᴛᴀ🍭__")
     elif event.pattern_match.group(1):
         mode = "text_on_cmd"
         msg = event.pattern_match.group(1)
@@ -49,9 +49,9 @@ async def mentionall(event):
         msg = await event.get_reply_message()
         if msg == None:
             return await event.respond(
-                "__I can't mention members for older messages! (messages which are sent before I'm added to group)__")
+                "__sᴀʏᴀ ᴛɪᴅᴀᴋ ʙɪsᴀ ᴍᴇɴʏᴇʙᴜᴛᴋᴀɴ ᴀɴɢɢᴏᴛᴀ ᴜɴᴛᴜᴋ ᴘᴇsᴀɴ ʟᴀᴍᴀ🍭 (ᴘᴇsᴀɴ ʏᴀɴɢ ᴅɪᴋɪʀɪᴍ sᴇʙᴇʟᴜᴍ sᴀʏᴀ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ɢʀᴜᴘ)__")
     else:
-        return await event.reply("__Reply to a message or give me some text to mention others!__")
+        return await event.reply("__ʙᴀʟᴀs ᴘᴇsᴀɴ ᴀᴛᴀᴜ ʙᴇʀɪ sᴀʏᴀ ʙᴇʙᴇʀᴀᴘᴀ ᴛᴇᴋs ᴜɴᴛᴜᴋ ᴍᴇɴʏᴇʙᴜᴛᴋᴀɴ ᴏʀᴀɴɢ ʟᴀɪɴ🍭__")
 
     spam_chats.append(chat_id)
     usrnum = 0
@@ -60,14 +60,14 @@ async def mentionall(event):
         if not chat_id in spam_chats:
             break
         usrnum += 1
-        usrtxt += f"📍 [{usr.first_name}](tg://user?id={usr.id}), "
+        usrtxt += f"🍭 [{usr.first_name}](tg://user?id={usr.id})🍭, "
         if usrnum == 5:
             if mode == "text_on_cmd":
                 txt = f"{msg}\n{usrtxt}"
                 await client.send_message(chat_id, txt)
             elif mode == "text_on_reply":
                 await msg.reply(usrtxt)
-            await asyncio.sleep(2)
+            await asyncio.sleep(3)
             usrnum = 0
             usrtxt = ''
     try:
@@ -98,18 +98,18 @@ async def cancel_spam(event):
         ):
             is_admin = True
     if not is_admin:
-        return await event.reply("__Only admins can execute this command!__")
+        return await event.reply("__ʜᴀɴʏᴀ ᴀᴅᴍɪɴ ʏᴀɴɢ ᴅᴀᴘᴀᴛ ᴍᴇɴᴊᴀʟᴀɴᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ ɪɴɪ🍭__")
     if not event.chat_id in spam_chats:
-        return await event.reply("__There is no proccess on going...__")
+        return await event.reply("__ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴘʀᴏsᴇs ʏᴀɴɢ ʙᴇʀᴊᴀʟᴀɴ 🍭__")
     else:
         try:
             spam_chats.remove(event.chat_id)
         except:
             pass
-        return await event.respond("__Berhenti Tag All.__")
+        return await event.respond("__ʙᴇʀʜᴇɴᴛɪ ᴍᴇɴʏᴇʙᴜᴛᴋᴀɴ 🍭__")
 
 
-__mod_name__ = "Tag all"
+__mod_name__ = "Aht Aht"
 __help__ = """
 ──「 Mention all func 」──
 
