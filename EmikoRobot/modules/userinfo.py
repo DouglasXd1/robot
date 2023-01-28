@@ -254,7 +254,7 @@ def info(update: Update, context: CallbackContext):
     rep = message.reply_text("<code>Mencari Identitas...</code>", parse_mode=ParseMode.HTML)
 
     text = (
-        f"📍「<b> ʜᴀsɪʟ ᴘᴇɴɪʟᴀɪᴀɴ:</b> 📍\n"
+        f"📍<b> ʜᴀsɪʟ ᴘᴇɴɪʟᴀɪᴀɴ:</b> 📍\n"
         f"ɪᴅ : <code>{user.id}</code>\n"
         f"ɴᴀᴍᴀ ᴅᴇᴘᴀɴ : {html.escape(user.first_name)}"
     )
@@ -284,7 +284,7 @@ def info(update: Update, context: CallbackContext):
                     text += _stext.format("admin")
     if user_id not in [bot.id, 777000, 1087968824]:
         userhp = hpmanager(user)
-        text += f"\n\n<b>:</b> Kesehatan<code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]"
+        text += f"\n\n<b>:</b> ᴋᴇsᴇʜᴀᴛᴀɴ<code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]"
 
     try:
         spamwtc = sw.get_ban(int(user.id))
@@ -328,7 +328,7 @@ def info(update: Update, context: CallbackContext):
             result = result.json()["result"]
             if "custom_title" in result.keys():
                 custom_title = result["custom_title"]
-                text += f"\n\nTitle:\n<b>{custom_title}</b>"
+                text += f"\n\nᴛɪᴛʟᴇ:\n<b>{custom_title}</b>"
     except BadRequest:
         pass
 
@@ -353,9 +353,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/enamsembilanbanget"),
+                                "ɢʀᴏᴜᴘ", url="https://t.me/enamsembilanbanget"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/TeknoProject")
+                                "ᴄʜᴀɴɴᴇʟ", url="https://t.me/TeknoProject")
                         ],
                     ]
                 ),
@@ -371,9 +371,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/enamsembilanbanget"),
+                                "ɢʀᴏᴜᴘ", url="https://t.me/enamsembilanbanget"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/TeknoProject")
+                                "ᴄʜᴀɴɴᴇʟ", url="https://t.me/TeknoProject")
                         ],
                     ]
                 ),
@@ -445,9 +445,9 @@ def set_about_me(update: Update, context: CallbackContext):
 
 @sudo_plus
 def stats(update: Update, context: CallbackContext):
-    stats = "<b>╔═━「 Current Douglas Statistics 」</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
+    stats = "<b> Current Douglas Statistics </b>\n" + "\n".join([mod.__stats__() for mod in STATS])
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
-    result += "\n<b>╘═━「 Powered By @Hisoka69 」</b>"
+    result += "\n<b>📍 Powered By @Rzrgnshn 📍</b>"
     update.effective_message.reply_text(
         result,
         parse_mode=ParseMode.HTML, 
