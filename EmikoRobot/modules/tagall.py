@@ -73,7 +73,7 @@ async def mentionall(event):
     try:
         spam_chats.remove(chat_id)
     except:
-        pass.
+        pass
 
 
 @client.on(events.NewMessage(pattern="^/stop$"))
