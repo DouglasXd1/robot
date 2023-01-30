@@ -60,20 +60,20 @@ async def mentionall(event):
         if not chat_id in spam_chats:
             break
         usrnum += 1
-        usrtxt += f"🍭 [{usr.first_name}](tg://user?id={usr.id})🍭, "
+        usrtxt += f"🍭 [{usr.first_name}](tg://user?id={usr.id})\n"
         if usrnum == 5:
             if mode == "text_on_cmd":
-                txt = f"{msg}\n{usrtxt}"
+                txt = f"{msg}\n\n{usrtxt}"
                 await client.send_message(chat_id, txt)
             elif mode == "text_on_reply":
                 await msg.reply(usrtxt)
-            await asyncio.sleep(3)
+            await asyncio.sleep(2)
             usrnum = 0
             usrtxt = ''
     try:
         spam_chats.remove(chat_id)
     except:
-        pass
+        pass.
 
 
 @client.on(events.NewMessage(pattern="^/stop$"))
