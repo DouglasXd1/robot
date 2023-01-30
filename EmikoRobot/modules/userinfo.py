@@ -251,7 +251,7 @@ def info(update: Update, context: CallbackContext):
     else:
         return
 
-    rep = message.reply_text("<code>Mencari Identitas...</code>", parse_mode=ParseMode.HTML)
+    rep = message.reply_text("<code>ᴍᴇɴᴄᴀʀɪ ɪᴅᴇɴᴛɪᴛᴀs...</code>", parse_mode=ParseMode.HTML)
 
     text = (
         f"📍<b> ʜᴀsɪʟ ᴘᴇɴɪʟᴀɪᴀɴ:</b> 📍\n"
@@ -268,7 +268,7 @@ def info(update: Update, context: CallbackContext):
     text += f"\nʟɪɴᴋ ᴘᴇɴɢɢᴜɴᴀ : {mention_html(user.id, 'link')}"
 
     if chat.type != "private" and user_id != bot.id:
-        _stext = "\nPresence: <code>{}</code>"
+        _stext = "\nᴘʀᴇsᴇɴᴛᴀsᴇ : <code>{}</code>"
 
         afk_st = is_afk(user.id)
         if afk_st:
@@ -276,22 +276,22 @@ def info(update: Update, context: CallbackContext):
         else:
             status = status = bot.get_chat_member(chat.id, user.id).status
             if status:
-                if status in {"keluar", "tertendang"}:
-                    text += _stext.format("Not here")
+                if status in {"ᴋᴇʟᴜᴀʀ", "ᴛᴇʀᴛᴇɴᴅᴀɴɢ"}:
+                    text += _stext.format("ᴛɪᴅᴀᴋ ᴅɪsɪɴɪ")
                 elif status == "member":
-                    text += _stext.format("terdeteksi")
-                elif status in {"admin", "pembuat"}:
-                    text += _stext.format("admin")
+                    text += _stext.format("ᴛᴇʀᴅᴇᴛᴇᴋsɪ")
+                elif status in {"ᴀᴅᴍɪɴ", "ᴘᴇᴍʙᴜᴀᴛ"}:
+                    text += _stext.format("ᴀᴅᴍɪɴs")
     if user_id not in [bot.id, 777000, 1087968824]:
         userhp = hpmanager(user)
-        text += f"\n\n<b>:</b> ᴋᴇsᴇʜᴀᴛᴀɴ<code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]"
+        text += f"\n\n<b>:</b> ᴋᴇsᴇʜᴀᴛᴀɴ <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]"
 
     try:
         spamwtc = sw.get_ban(int(user.id))
         if spamwtc:
-            text += "\n\n<b>This person is Spamwatched!</b>"
-            text += f"\nReason: <pre>{spamwtc.reason}</pre>"
-            text += "\nAppeal at @SpamWatchSupport"
+            text += "\n\n<b>ᴘᴇɴɢɢᴜɴᴀ ɪɴᴊ ᴛᴇʀᴋᴇɴᴀ sᴘᴀᴍᴡᴀᴛᴄʜ!</b>"
+            text += f"\nᴀʟᴀsᴀɴ : <pre>{spamwtc.reason}</pre>"
+            text += "\nsɪʟᴀʜᴋᴀɴ ᴄᴇᴋ @SpamWatchSupport"
     except:
         pass  # don't crash if api is down somehow...
 
@@ -301,7 +301,7 @@ def info(update: Update, context: CallbackContext):
         text += "\n\nThe Disaster level of this person is 'King'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nᴀᴋᴜ ᴀᴅᴀʟᴀʜ sᴀɴɢ ꝛʌᴢᴏʀ."
+        text += "\n\nᴀᴋᴜ ᴀᴅᴀʟᴀʜ sᴀɴɢ @rzrgnshn."
         disaster_level_present = True
     elif user.id in DRAGONS:
         text += "\n\nThe Disaster level of this person is 'Emperor'."
