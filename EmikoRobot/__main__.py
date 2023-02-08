@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *ʜᴀɪ {} !*
-ᴀᴋᴜ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ᴍᴜsɪᴄ & ᴍᴀɴᴀɢᴇʀ [🍭](https://telegra.ph/file/a9f2c0b24ea825378b683.jpg)
+ᴀᴋᴜ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ᴍᴜsɪᴄ & ᴍᴀɴᴀɢᴇʀ [☬](https://telegra.ph/file/a9f2c0b24ea825378b683.jpg)
 ────────────────────────
 × *ᴋᴇᴄᴇᴘᴀᴛᴀɴ:* `{}`
 × `{}` *ᴘᴇɴɢɢᴜɴᴀ, ᴅᴀɴ* `{}` *ɢʀᴏᴜᴘ.*
@@ -93,17 +93,17 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text=f"ᴛᴇɴᴛᴀɴɢ {dispatcher.bot.first_name}", callback_data="emiko_"),
+        InlineKeyboardButton(text=f"🤖 ᴛᴇɴᴛᴀɴɢ ᴅᴏᴜɢʟᴀs ʙᴏᴛ", callback_data="emiko_"),
     ],
     [
         InlineKeyboardButton(text="💬 ʙᴀɴᴛᴜᴀɴ", callback_data="help_back"),
         InlineKeyboardButton(
-            text="ᴍᴇɴᴄᴏʙᴀ ɪɴʟɪɴᴇ​​", switch_inline_query_current_chat=""
+            text="♲︎︎︎ ᴍᴇɴᴄᴏʙᴀ ɪɴʟɪɴᴇ​​", switch_inline_query_current_chat=""
         ),
     ],
     [
         InlineKeyboardButton(
-            text="ᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ɢʀᴏᴜᴘ", url=f"t.me/douglasmusic_bot?startgroup=new"),
+            text="╬ ᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ɢʀᴏᴜᴘ ╬", url=f"t.me/douglasmusic_bot?startgroup=new"),
     ],
 ]
 
@@ -113,7 +113,7 @@ sɪʟᴀʜᴋᴀɴ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ ɪɴɪ ᴜɴ�
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @rzrgnshn \
+ You can support the project by contacting @RzrVsTheWorld \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -425,8 +425,8 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url="t.me/Liveshowbanget"),
-                    InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/TeknoProject"),
+                    InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url="t.me/enamsembilanbanget"),
+                    InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/+lQvTkx31fORhM2Zl"),
                  ],
                  [
                     InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="emiko_"),
@@ -445,7 +445,7 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Razor", url="https://t.me/rzrgnshn"),
+                    InlineKeyboardButton(text="ꝛʌᴢᴏʀ", url="https://t.me/Rzrvstheworld"),
                  ],
                  [
                     InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="emiko_"),
@@ -766,7 +766,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "ᴀʜʜᴛᴛ ʏᴇᴀʜʜʜ ʙʙʏʏ🤤🥵",
+                "ᴀʜʜᴛᴛ ᴀʜʜᴛᴛ ᴀʜʜᴛᴛ 🥵🔥 ",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
