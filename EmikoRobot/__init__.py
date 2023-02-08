@@ -116,7 +116,7 @@ if ENV:
     WALL_API = os.environ.get("WALL_API", None)
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
-    SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
+    SPAMWATCH_API = os.environ.get("SPAMWATCH_API", "GcXKaiOzt1Z~MRvjKKtxhDfPz8aKSppbkq4ch4PhysiffLVThA3y3KtRtC9tyIjj")
     LASTFM_API_KEY = os.environ.get("LASTFM_API_KEY", None)
     CF_API_KEY = os.environ.get("CF_API_KEY", None)
     WELCOME_DELAY_KICK_SEC = os.environ.get("WELCOME_DELAY_KICL_SEC", None)
